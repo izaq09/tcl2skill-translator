@@ -3,7 +3,7 @@
 
 ## 🌟 Overview
 
-This project showcases a **LLM-Powered translator** that convert **TCL (Tool Command Language)** code into **SKILL code (Cadence’s scripting language)** using Large Language Model (LLM) API.
+This project showcases a **LLM-Powered translator** that convert **TCL (Tool Command Language)** code into **SKILL code (Cadence’s scripting language)** using **Large Language Model (LLM)** API.
 
 The project addresses the challenge of converting scripting logic between these two distinct languages, utilizing **advanced prompt engineering**, **dynamic mapping** and **few-shot learning** to ensure accurate and idiomatic translation within the EDA context.
 
