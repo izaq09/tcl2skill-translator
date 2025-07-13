@@ -1,0 +1,18 @@
+{
+    "genOpt": [
+        "    * TCL: `genOpt HPWL` -> SKILL: `genOpt(\"HPWL\")`",
+        "    * TCL: `genOpt` -> SKILL: `genOpt()`"
+    ],
+    "genConstrainNet": [
+        "    * TCL: `genConstrainNet {net1 net2 net3}` -> SKILL: `genConstrainNet(list(\"net1\" \"net2\" \"net3\"))`"
+    ],
+    "genConstrainAspectRatio": [
+        "    * TCL: `genConstrainAspectRatio $minAspectRatio $maxAspectRatio` -> SKILL: `genConstrainAspectRatio(minAspectRatio maxAspectRatio)`"
+    ],
+    "genConstrainOrient": [
+        "    * TCL: `genConstrainOrient {inst1 inst2} MX` -> SKILL: `genConstrainOrient(list(\"inst1\" \"inst2\") \"MX\")`"
+    ],
+    "genConstrainBlockage": [
+        "    * TCL: `genConstrainBlockage {{lowerLeftX lowerLeftY} {upperRightX upperRightY}}` -> SKILL: `genConstrainBlockage(list(list(lowerLeftX lowerLeftY) list(upperRightX upperRightY)))`"
+    ]
+}

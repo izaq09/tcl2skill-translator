@@ -1,0 +1,25 @@
+**Variables:**
+    * TCL: `set variable_name value`  -> SKILL: `variable_name = value`
+    * TCL: `$variable_name` -> SKILL: `variableName` (SKILL does not use '$' for variable access)
+
+**Standard Output:**
+    * TCL: `puts "string"` -> SKILL: `printf("string\n")`
+
+**Procedures/Functions:**
+    * TCL: `proc name {args} { ... }` -> SKILL: `procedure(name(args) ... )`
+    * SKILL uses `prog` to define local variables within procedures.
+    # `procedure(procName(args) prog((local_variable) ... );prog);procedure`
+
+##List Manipulations:**
+    * TCL: `set exampleList [list]` -> SKILL: `exampleList = list()`
+    * TCL: `lappend exampleList $element` -> SKILL: `append1(exampleList element)`
+
+**Loops:**
+    * TCL: `for {init} {end_condition} {increment} { ... }` -> SKILL: `for(var_name start_value end_value ... )` (For loop in SKILL defines start and end values explicitly and var_name does not need to be localized)
+
+**Mathematical Operations:**
+    * TCL: `[expr $x + $y]` -> SKILL: `x + y`
+    * TCL: `[expr $x * $y]` -> SKILL: `x * y`
+
+**Control Flow:**
+    * TCL: `if {condition} { ... } else { ... }` -> SKILL: `if(condition then ... else ...)`
