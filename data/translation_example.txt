@@ -1,0 +1,37 @@
+### Example 1
+TCL Input:
+```tcl
+proc procName {{arg1 arg2}} {{
+    puts "Hello, World!"
+}}
+```
+
+SKILL Output:
+```skill
+procedure(procName(arg1 arg2)
+    prog(()
+        printf("%s %s\\n" arg1 arg2)
+    );prog
+);procedure
+```
+
+### Example 2
+TCL Input:
+```tcl
+proc procName {{arg1 arg2}} {{
+    for {{set i 0}} {{$i <= 10}} {{incr i}} {{
+        puts "Iteration $i: $arg1 $arg2"
+    }}
+}}
+```
+
+SKILL Output:
+```skill
+procedure(procName(arg1 arg2)
+    prog(()
+        for(i 0 10
+            printf("Iteration %d: %s %s\n" i arg1 arg2)
+        );for
+    );prog
+);procedure
+```
