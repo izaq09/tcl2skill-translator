@@ -6,9 +6,9 @@
     * TCL: `puts "string"` -> SKILL: `printf("string\n")`
 
 **Procedures/Functions:**
-    * TCL: `proc name {args} { ... }` -> SKILL: `procedure(name(args) ... )`
+    * TCL: `proc procName { args } { ... }` -> SKILL: `procedure(procName( args ) ... )`
     * SKILL uses `prog` to define local variables within procedures.
-    # `procedure(procName(args) prog((local_variable) ... );prog);procedure`
+    # `procedure(procName( args ) prog((local_variable) ... );prog);procedure`
 
 ##List Manipulations:**
     * TCL: `set exampleList [list]` -> SKILL: `exampleList = list()`
