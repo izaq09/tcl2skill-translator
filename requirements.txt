@@ -1,3 +1,4 @@
 dotenv
 google-genai
 langchain
+streamlit
